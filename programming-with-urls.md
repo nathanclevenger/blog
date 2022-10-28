@@ -12,3 +12,9 @@ What if you could type `eval.do/1+1` into your browser and you saw:
 ```
 
 And you wouldn't even have to type it yourself, because the web is built on links like: <https://eval.do/1+1>.  Anyone could simply click on that link, and see results.
+
+But wouldn't this be limiting?  How could you compose complex programs?
+
+Let's assuming you have a large JSON file, like the Northwind database: <https://json.fyi/northwind.json>
+
+It consists 
