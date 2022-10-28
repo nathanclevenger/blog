@@ -27,10 +27,10 @@ It consists of several root collections:
   "OrderDetail": [],
   "Product": [],
   "Region": [],
-  "SalesOrder: []",
-  "Shipper: []",
-  "Supplier: []",
-  "Territory: []"
+  "SalesOrder": [],
+  "Shipper": [],
+  "Supplier": [],
+  "Territory": []
 }
 ```
 
