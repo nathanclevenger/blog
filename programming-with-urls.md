@@ -62,4 +62,121 @@ Where each root collection holds an array of items like:
 
 But what if you wanted to just get the category collection out of the large file, how would you do it?  You could download the file and manually edit it.  You could copy and paste it into an online editor.  
 
-But what if you could just pluck the Category collection right out of the entire file? <https://pluck.do/Category/json.fyi/northwind.json>
+But what if you could just pluck the Category collection right out of the entire file? 
+
+If you visit <https://pluck.do/Category/json.fyi/northwind.json> you would see:
+
+```json
+[
+  {
+    "picture": null,
+    "entityId": 1,
+    "description": "Soft drinks, coffees, teas, beers, and ales",
+    "categoryName": "Beverages"
+  },
+  {
+    "picture": null,
+    "entityId": 2,
+    "description": "Sweet and savory sauces, relishes, spreads, and seasonings",
+    "categoryName": "Condiments"
+  },
+  {
+    "picture": null,
+    "entityId": 3,
+    "description": "Desserts, candies, and sweet breads",
+    "categoryName": "Confections"
+  },
+  {
+    "picture": null,
+    "entityId": 4,
+    "description": "Cheeses",
+    "categoryName": "Dairy Products"
+  },
+  {
+    "picture": null,
+    "entityId": 5,
+    "description": "Breads, crackers, pasta, and cereal",
+    "categoryName": "Grains/Cereals"
+  },
+  {
+    "picture": null,
+    "entityId": 6,
+    "description": "Prepared meats",
+    "categoryName": "Meat/Poultry"
+  },
+  {
+    "picture": null,
+    "entityId": 7,
+    "description": "Dried fruit and bean curd",
+    "categoryName": "Produce"
+  },
+  {
+    "picture": null,
+    "entityId": 8,
+    "description": "Seaweed and fish",
+    "categoryName": "Seafood"
+  }
+]
+```
+
+And what if you wanted to transform the camelCase to snake_case?
+
+You could prepend `snake.case.do/` to the URL and then you would see:
+```json
+[
+  {
+    "picture": null,
+    "entity_id": 1,
+    "description": "Soft drinks, coffees, teas, beers, and ales",
+    "category_name": "Beverages"
+  },
+  {
+    "picture": null,
+    "entity_id": 2,
+    "description": "Sweet and savory sauces, relishes, spreads, and seasonings",
+    "category_name": "Condiments"
+  },
+  {
+    "picture": null,
+    "entity_id": 3,
+    "description": "Desserts, candies, and sweet breads",
+    "category_name": "Confections"
+  },
+  {
+    "picture": null,
+    "entity_id": 4,
+    "description": "Cheeses",
+    "category_name": "Dairy Products"
+  },
+  {
+    "picture": null,
+    "entity_id": 5,
+    "description": "Breads, crackers, pasta, and cereal",
+    "category_name": "Grains/Cereals"
+  },
+  {
+    "picture": null,
+    "entity_id": 6,
+    "description": "Prepared meats",
+    "category_name": "Meat/Poultry"
+  },
+  {
+    "picture": null,
+    "entity_id": 7,
+    "description": "Dried fruit and bean curd",
+    "category_name": "Produce"
+  },
+  {
+    "picture": null,
+    "entity_id": 8,
+    "description": "Seaweed and fish",
+    "category_name": "Seafood"
+  }
+]
+```
+
+And then what if you wanted to sort those categories alphabetically by Category Name?
+
+Just go to: <https://sort.do/category_name/snake.case.do/pluck.do/Category/json.fyi/northwind.json>
+```json
+```
